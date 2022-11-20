@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+
+
+
+ 
+ <param name="numRobots" value="20"/>
+  <node pkg="robot_flock" type="robot_flock_node" name="flock" output="screen"/>
+  <node pkg="sphero_stage" type="start.py" name="stage" output="screen"/>
+ 
+
+  
+
+  
+  
+
+
+
+  </launch>
