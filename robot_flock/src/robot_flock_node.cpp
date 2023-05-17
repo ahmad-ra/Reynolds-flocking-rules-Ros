@@ -1,9 +1,15 @@
 #include "robot_flock/robot.h"
 #include "robot_flock/robotRosInterface.h"
 
+// #include <dynamic_reconfigure/server.h>
+// #include <robot_flock/robotFlockConfig.h>
+
 #include <iostream>
 
 using namespace robots;
+
+
+  
 
 int main(int argc, char **argv)
 {

@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: robot_flock
-Description: Description of robot_flock
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

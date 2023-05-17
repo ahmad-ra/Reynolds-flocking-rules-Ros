@@ -5,9 +5,10 @@
 
 
  
- <param name="numRobots" value="20"/>
+ <param name="numRobots" value="3"/>
   <node pkg="robot_flock" type="robot_flock_node" name="flock" output="screen"/>
   <node pkg="sphero_stage" type="start.py" name="stage" output="screen"/>
+  <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="dynamicReconfig" output="screen"/>
  
 
   

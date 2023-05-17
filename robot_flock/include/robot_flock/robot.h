@@ -48,6 +48,12 @@ namespace robots
         float alignmentStrength;
         float *alignmentVel, *alignmentTermAccumulator;
 
+
+        // formation terms
+        float formationStepSize;
+        float *formationVel, *formationPoint;
+
+
         // add parames of new behavior
         //
         //
@@ -58,13 +64,15 @@ namespace robots
         //
 
         robot();
-        robot(float id, float position[], float velocity[], float radius, float theta, float separationStrength, float cohesionStrength, float alignmentStrength);
+        robot(float id, float position[], float velocity[], float radius, float theta, float separationStrength, float cohesionStrength, float alignmentStrength,  float formationStepSize, float* formationPoint);
 
         bool isNeighbour(robot r);
 
         float *separation(std::vector<robot> robots);
         float *cohesion(std::vector<robot> robots);
         float *alignment(std::vector<robot> robots);
+        float *formationConsensus(std::vector<robot> robots);
+
         float *outputVel(std::vector<float *> velocities, std::vector<float> percentages);
 
         void resetNeighborhood();
